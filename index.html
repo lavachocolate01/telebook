@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>📞 簡易通訊錄管理系統</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h2>📞 簡易通訊錄管理系統</h2>
+    <div class="container">
+        <!-- 做邊畫面：新增聯絡人與搜尋欄 -->
+        <div class="box">
+            <h3>聯絡人操作</h3>
+            <div class="form-group">
+                <label for="name-input">姓名：</label>
+                <input type="text" id="name-input" placeholder="請輸入姓名">
+            </div>
+            <div class="form-group">
+                <label for="phone-input">電話：</label>
+                <input type="text" id="phone-input" placeholder="請輸入電話">
+            </div>
+            <button id="add-btn" class="add-btn">新增聯絡人</button>
+
+            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+
+            <div class="form-group">
+                <label for="search-input">搜尋聯絡人：</label>
+                <input type="text" id="search-input" placeholder="輸入關鍵字搜尋姓名或電話">
+            </div>
+        </div>
+
+        <!-- 右邊畫面：聯絡人清單區 -->
+        <div class="box">
+            <h3>聯絡人清單 (<span id="count-display">0</span>)</h3>
+            <div id="contact-list"></div>
+        </div>
+    </div>
+</body>
+</html>
